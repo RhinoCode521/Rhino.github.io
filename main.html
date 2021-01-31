@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<!--说明：企业命名及logo都是自己设计的，其中，logo的设计采用了ps。-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>佰味人生</title>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <style>
+        ul
+        {
+            list-style-type:none;
+            margin:0;
+            padding:0;
+        }
+        li
+        {
+            display:inline;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload=function(){
+            var wrap=document.getElementById('storypic'),
+                pic=document.getElementById('pic').getElementsByTagName("li"),
+                list=document.getElementById('list').getElementsByTagName('li'),
+                index=0,
+                timer=null;
+
+            // 定义并调用自动播放函数
+            timer = setInterval(autoPlay, 2000);
+
+            // 鼠标划过整个容器时停止自动播放
+            wrap.onmouseover = function () {
+                clearInterval(timer);
+            }
+
+            // 鼠标离开整个容器时继续播放至下一张
+            wrap.onmouseout = function () {
+                timer = setInterval(autoPlay, 2000);
+            }
+            // 遍历所有数字导航实现划过切换至对应的图片
+            for (var i = 0; i < list.length; i++) {
+                list[i].onmouseover = function () {
+                    clearInterval(timer);
+                    index = this.innerText - 1;
+                    changePic(index);
+                };
+            };
+
+            function autoPlay () {
+                if (++index >= pic.length) index = 0;
+                changePic(index);
+            }
+
+            // 定义图片切换函数
+            function changePic (curIndex) {
+                for (var i = 0; i < pic.length; ++i) {
+                    pic[i].style.display = "none";
+                    list[i].className = "";
+                }
+                pic[curIndex].style.display = "block";
+                list[curIndex].className = "on";
+            }
+        };
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div id="navigation">
+            <ul>
+                <li><a href="main.html">主页</a></li>
+                <li><a href="news.html" target="_blank">企业新闻</a></li>
+                <li><a href="join.html" target="_blank">连锁加盟</a></li>
+                <li><a href="about.html" target="_blank">关于佰味</a></li>
+            </ul>
+        </div>
+        <div id="intro">
+            <div class="intro-text">
+                <img src="images/title.png" alt="" width="800" height="380" />
+            </div>
+            <div id="introp">
+                <p align="center" style="font-family: 华文行楷">啖食佰味，尽欢人生</p>
+            </div>
+        </div>
+    </div>
+
+      <div id="specials" >
+          <div id="spetitle">
+              <h1 align="center" style="font-family: '华文行楷'"><u style="color: #c9302c">特色菜品</u></h1>
+          </div>
+          <div class="box">
+              <h2 style="font-family: '华文行楷'">松仁鲈鱼</h2>
+              <img src="images/特色美食1.jpg" width="300" height="180" alt=""  />
+              <p style="font-family: '微软雅黑 Light'"><span style="font-weight: bold;">采用世界名贵松仁，配上山间溪流中的鲈鱼。松仁的香气和鲈鱼的鲜美交融，迸发出味蕾最曼妙的体验!</span></p>
+          </div>
+          <div class="box">
+              <h2 style="font-family: '华文行楷'">绝味小龙虾</h2>
+              <img src="images/特色美食2.jpg" width="300" height="180" alt=""  />
+              <p style="font-family: '微软雅黑 Light'"><span style="font-weight: bold">独家秘制绝味小龙虾，采用潜江最高品质小龙虾，淡水养殖，再加上百种秘制酱料的混合，让你体验冰与火交融的快感！</span> </p>
+          </div>
+          <div class="box">
+              <h2 style="font-family: '华文行楷'">茅香草鱼</h2>
+              <img src="images/特色美食3.jpg" width="300" height="180" alt=""  />
+              <p style="font-family: '微软雅黑 Light'"><span style="font-weight: bold">云南特色美食，采用上等草鱼，配上森林深处的天然茅草。草鱼覆上茅草，腌烤入味，给你不一样的清香记忆！</span></p>
+          </div>
+      </div>
+      <div id="story">
+          <div class="storypic" id="storypic">
+              <ul id="pic">
+                  <li><img src="images/sto1.jpg" alt="" width="700" height="500" /></li>
+                  <li><img src="images/sto2.jpg" alt="" width="700" height="500"/></li>
+                  <li><img src="images/sto3.jpg" alt="" width="700" height="500"/></li>
+              </ul>
+              <ol id="list">
+                  <li class="on">1</li>
+                  <li>2</li>
+                  <li>3</li>
+              </ol>
+          </div>
+		  <div class="storytext">
+              <br/>
+              <h1 align="center" style="font-family: 华文行楷">企业文化</h1>
+              <br/>
+              <p style="font-family: '微软雅黑 Light';text-indent: 2em; line-height: 25px;"><span style="font-weight: bold;">顾客满意：</span>提供给每一位顾客满意的用餐体验。人才培养：给每一名员工提供充分发挥个人才能、晋升发展的事业平台。
+              </p>
+              <br/>
+              <p style="font-family: '微软雅黑 Light';text-indent: 2em;line-height: 25px;"><span style="font-weight: bold;">力：</span>力争完美 创：争创第一。专：发挥专长 心：尽心尽责 诚：诚信守诺。
+              </p>
+              <br/>
+              <p style="font-family: '微软雅黑 Light';text-indent: 2em;line-height: 25px;"><span style="font-weight: bold;">人才：</span>以人才为基石，以员工培育为重点； 创新：以创新为驱动，不断引领美食发展潮流；品牌：以顾客为品牌核心发展目标，让佰味人生旗下品牌成为美味与服务、传统与时尚的完美结合的代名词。
+              </p>
+              <br/>
+              <p style="font-family: '微软雅黑 Light';text-indent: 2em;line-height: 25px;"><span style="font-weight: bold;">产品 :</span>我们的产品灵感来自于顾客，在色、香、味、意、形上也愉悦着顾客，美味口口相传。服务：我们热情、准确、细致的服务，从每一个微笑到每一个手势，无处不体现我们与顾客之间的真挚互动。环境：我们提供给顾客卫生（放心）、整洁（怡心）、安全（安心）、舒适（舒心）、快乐（悦心）的用餐环境。
+              </p>
+              <br/>
+              <p style="font-family: '微软雅黑 Light';text-indent: 2em;line-height: 25px;"><span style="font-weight: bold;">品牌印象：</span>我们立志把品牌做强、做大，让品牌得以顾客身边口口相传。丰富伙伴的生活：我们立志让伙伴个人和家庭生活幸福，衣食住行品质得以提升。
+              <p/>
+          </div>
+      </div>
+        <div id="corporation">
+			<div class="corporationTitle">
+           	  <h2 align="center" style="font-family: 华文行楷">战略合作</h2>
+            </div>
+                <div class="corbox"><img src="images/cor1.png" width="100" height="100" alt="" /></div>
+                <div class="corbox"><img src="images/cor2.png" width="100" height="100"  alt="" /></div>
+                <div class="corbox"><img src="images/cor3.png" width="100" height="100" alt=""  /></div>
+                <div class="corbox"><img src="images/cor4.png" width="100" height="100" alt=""  /></div>
+                <div class="corbox"><img src="images/cor5.png" width="100" height="100" alt="" /></div>
+        </div>
+    <div id="footer">
+      <div class="footertext">
+      <p>Copyright &copy; 2020.佰味人生 All rights reserved.<a target="_blank" href="#copyright"></a></p>
+      <p>联系电话：287-85654</p>
+    </div>
+    </div>
+</div>
+</body>
+</html>

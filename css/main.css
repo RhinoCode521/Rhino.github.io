@@ -1,0 +1,187 @@
+body{
+    margin: 0px;
+    width:100%;
+    min-width:1500px;
+    max-width:100%;
+    height:100%;
+}
+*{margin:0px;padding:0px}
+/*网站头部*/
+#header{
+    width: 100%;
+    height: 600px;
+    border:solid #E0E0E0 1px;
+    margin: 0cm;
+    background: url("../images/intro-bg.jpg") no-repeat;
+    background-size: 100% auto;
+}
+#navigation{
+    height: 50px;
+    margin-top: 10px;
+    padding-left: 350px;
+}
+
+#navigation ul li{
+    list-style: none;
+    float: left;
+}
+
+#navigation a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding:0 80px;
+    font-size: 14px;
+}
+
+#navigation a:hover{
+    color: #ff0f03;
+    background: #edeef0;
+    background: lightgray;
+}
+#intro{
+    height: 550px;
+
+}
+.intro-text{
+    position: absolute;
+    top: -30px;
+    height: 380px;
+    width: 670px;
+    margin-left: 300px;
+
+}
+#introp{
+    position: relative;
+    margin-top: 380px;
+}
+#intro p {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 100px;
+}
+.intro-text{
+    margin-top: 120px;
+}
+/*特色菜品*/
+#specials{
+	height: 800px;
+	width: 100%;
+    overflow: auto;  /*关键属性设置，使用hidden代替也可，默认值是visible*/
+     /* margin: 0 -20px -20px 0;与.box样式相对应*/
+}
+#spetitle{
+    margin-top: 105px;
+}
+#spetitle h1{
+    font-size: 5em;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: #777;
+    font-weight: 400;
+}
+.box h2{
+    font-size: 2em;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: #777;
+    font-weight: 400;
+}
+.box {
+    margin-top: 70px;
+    width: 300px;height: 50px;
+    margin-left: 160px;
+    float: left; /*向左浮动方式并排排列*/
+    line-height: 50px;
+}
+.box h2{
+    text-align: center;
+}
+.box p{
+    text-align: left;
+}
+/*企业文化*/
+#story{
+    width: 100%;
+    height: 500px;
+    background-color: #f0f0f0;
+}
+.storypic{
+    height: 500px;
+	width:50%;
+	float: left;
+    margin-right: 0px;
+    overflow: hidden;
+    position: relative;
+}
+.storypic ul{position:absolute;}
+.storypic ul li{height:500px;}
+.storypic ol{position:absolute;
+    right:60px;
+    bottom:5px;}
+.storypic ol li{height:20px; width: 20px;
+    background:#ccc;
+    border:solid 1px #ffffff;
+    margin-left:5px;
+    color:#000;
+    float:left;
+    line-height:center;
+    text-align:center;
+    cursor:pointer;}
+.storypic ol .on{background:#E97305;
+    color:#fff;}
+.storytext{
+    margin-top: 20px;
+    margin-left: 0px;
+    border:0;padding:0;
+    width: 50%;
+    float: left;
+    height: 500px;
+}
+#story.storytext p{
+    border:solid #E0E0E0 1px;
+}
+/*合作案例*/
+#corporation{
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+}
+.corporationTitle{
+
+    margin-top: 60px;
+    position: relative;
+    height:70px;
+}
+.corporationTitle h2{
+    font-size: 2em;
+    color: #256ead;
+}
+.corbox {
+    width: 200px;height: 100px;
+    margin-left: 100px;
+    float: left; /*向左浮动方式并排平铺商品     line-height: 50px;*/
+}
+/*网页底部*/
+#footer{
+    width: 100%;
+    border:solid #f0f0f0 1px;
+    height: 200px;
+	background-color: #2f2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footertext{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+.footertext p{
+	color: aliceblue;
+    text-align: center;
+    line-height: 50px;
+}

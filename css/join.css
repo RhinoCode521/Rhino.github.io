@@ -1,0 +1,119 @@
+body{
+    margin: 0px;
+    width:100%;
+    min-width:1500px;
+    max-width:100%;
+    height:100%;
+
+}
+/*头部*/
+#top{
+    height: 150px;
+    /*background: url("images/加盟-1.jpg") no-repeat;*/
+    background-size: 100% auto;
+}
+#logo{
+    margin-left: 100px;
+    height: 110px;
+    display:flex;
+}
+.search {
+    width: 500px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 600px;
+}
+
+.parent {
+    width: 100%;
+    height: 42px;
+    top: 4px;
+    position: relative;
+}
+
+.parent>input:first-of-type {
+    /*输入框高度设置为40px, border占据2px，总高度为42px*/
+    width: 380px;
+    height: 40px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.parent>input:first-of-type:focus {
+    /*padding-left: 10px;*/
+}
+
+.parent>input:last-of-type {
+    width: 100px;
+    height: 44px;
+    position: absolute;
+    background: #dd2727;
+    border: 1px solid #dd2727;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+.parent>input:last-of-type:hover{
+    background: #c7254e;
+    color: black;
+}
+#navigation{
+    height: 40px;
+    padding-left: 180px;
+    background-color: #dd2727;
+    margin: 0;
+}
+#navigation ul li{
+    list-style: none;
+    float: left;
+}
+#navigation a{
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding:0 50px;
+    font-size: 14px;
+}
+#navigation a:hover{
+    color: #ff0f03;
+    background: #edeef0;
+    background: lightgray;
+}
+/*内容*/
+#content{
+    height: 700px;
+    background: url("../images/joinpic.jpg") no-repeat;
+    background-size: 100% auto;
+}
+.register{
+    position: relative;
+    height:500px;
+    width:60%;
+    margin:  auto;
+}
+.register table{
+    margin: auto;/*让表格居中*/
+
+}
+/*页面底部*/
+#footer{
+    width: 100%;
+    height: 200px;
+    background-color: #2f2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footertext{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+.footertext p{
+    color: aliceblue;
+    text-align: center;
+    line-height: 50px;
+}

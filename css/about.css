@@ -1,0 +1,98 @@
+/**/*{margin:0px;padding:0px}
+body{
+    margin: 0px;
+    width:100%;
+    min-width:1500px;
+    max-width:100%;
+    height:100%;
+}
+/*头部*/
+#top{
+    height:500px;
+    border-top: solid black 1px;
+}
+#aboutpic{
+    height: 460px;
+    border-top: solid black 1px;
+    background: url("../images/11.jpg") no-repeat;
+    background-size: 100% auto;
+}
+#abouttext{
+    margin-top: 200px;
+    margin-left: 300px;
+}
+#navigation{
+    height: 40px;
+    padding-left: 180px;
+    background-color: #adadad;
+    margin: 0;
+}
+#navigation ul li{
+    list-style: none;
+    float: left;
+}
+#navigation a{
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding:0 50px;
+    font-size: 14px;
+}
+#navigation a:hover{
+    color: #ff0f03;
+    background: #edeef0;
+    background: lightgray;
+}
+/*内容*/
+#content{
+    margin-top: 0px;
+    height: 700px;
+
+    background: url("../images/aboutbackground.jpg") no-repeat;
+    /**/background-size: 100% auto;
+}
+#introduction{
+    height:400px;
+    width:1000px;
+    margin:auto;
+    margin-top: 150px;
+    border-top: solid cadetblue 2px;
+    border-bottom:solid cadetblue 2px ;
+    display:flex;
+}
+#introtext{
+    width: 300px;
+}
+.intropic{
+    height: 400px;
+    width:700px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 0px;
+    overflow: hidden;
+    position: relative;
+}
+.intropic ul{position:absolute;}
+.intropic ul li{height:400px;}
+
+/*底部*/
+#footer{
+    width: 100%;
+    height: 200px;
+    background-color: #2f2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footertext{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+.footertext p{
+    color: aliceblue;
+    text-align: center;
+    line-height: 50px;
+}
